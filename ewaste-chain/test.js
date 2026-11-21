@@ -1,0 +1,28 @@
+process.env.DATA_DIR = require('os').tmpdir() + '/ewaste-test-' + Date.now();
+const S = require('./src/service');
+const ok = (c, m) => { console.log((c ? 'PASS ' : 'FAIL ') + m); if (!c) process.exitCode = 1; };
+const rejects = async (fn, m) => { try { await fn(); ok(false, m); } catch (e) { ok(true, `${m}  -> ${e.message}`); } };
+(async () => {
+  const id = await S.createItem('GEN1', { category: 'Laptop', description: 'Dell Latitude', weightKg: 2.2, hasData: true });
+  await S.submit('COL1', 'COLLECT', id);
+  await S.submit('COL1', 'TRANSFER', id, { to: 'TRN1' }); await S.submit('TRN1', 'ACCEPT', id);
+  await S.submit('TRN1', 'TRANSFER', id, { to: 'REC1' }); await S.submit('REC1', 'ACCEPT', id);
+  await rejects(() => S.submit('REC1', 'DISMANTLE', id), 'Dismantle before data wipe is blocked');
+  await rejects(() => S.submit('TRN1', 'WIPE', id), 'Non-recycler cannot wipe');
+  await rejects(() => S.submit('AUD1', 'COLLECT', id), 'Auditor cannot write transactions');
+  await S.submit('REC1', 'WIPE', id, { method: 'NIST 800-88 Purge' }, 'Wipe report: 3-pass overwrite, SN123');
+  await S.submit('REC1', 'DISMANTLE', id, { components: ['battery', 'PCB'] });
+  await rejects(() => S.submit('REC1', 'RECYCLE', id, { materials: { metal: 9 } }), 'Recovered mass above item weight is blocked');
+  await S.submit('REC1', 'RECYCLE', id, { materials: { metal: 1.1, plastic: 0.7, glass: 0.2 } });
+  ok((await S.verifyItem(id)).verdict === 'AUTHENTIC', 'Untouched item verifies AUTHENTIC');
+  ok((await S.getItem(id)).certificate.certId.startsWith('CERT-'), 'Recycling certificate issued');
+  let al = await S.alerts();
+  ok(al.filter(a => a.kind === 'UNAUTHORIZED_ACTION').length >= 2 && al.some(a => a.kind === 'INVALID_ACTION'), `Rejected actions logged as alerts (${al.length})`);
+  await S.tamperDb(id); ok((await S.verifyItem(id)).verdict === 'TAMPERED', 'Off-chain DB tampering detected');
+  ok((await S.alerts()).some(a => a.kind === 'TAMPER_DETECTED'), 'TAMPER_DETECTED alert raised'); await S.restore();
+  ok((await S.verifyItem(id)).verdict === 'AUTHENTIC', 'Restored record verifies again');
+  await S.tamperChain(1); ok(!(await S.driver.validate()).valid, 'Ledger tampering detected');
+  await rejects(() => S.createItem('GEN1', { category: 'Phone', weightKg: 0.2 }), 'Writes blocked on corrupted ledger'); await S.restore();
+  const R = await S.report();
+  ok(R.totals.items === 1 && R.totals.recycled === 1 && R.recovery.recoveredKg === 2 && R.items[0].dataWiped, `Audit report OK (recovered ${R.recovery.recoveredKg} kg, ${R.recovery.recoveryRatePct}%)`);
+})();

@@ -1,0 +1,62 @@
+{
+  "participants": [
+    {
+      "id": "GEN1",
+      "name": "Green Valley Apartments",
+      "role": "GENERATOR",
+      "publicKey": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEw40irSGMryrSDOvQiUu5QsZgHxAK\n63cPv2Kl9EuYIhmytuWgtPz+y90Mq2JM1fLpozXB4gDJO84pKmTO8Xly+w==\n-----END PUBLIC KEY-----\n",
+      "privateKey": "-----BEGIN PRIVATE KEY-----\nMIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQgMC3I+yWg21qlMeap\n4H7k0jL8fLKMD0BgT4bicM18B1ihRANCAATDjSKtIYyvKtIM69CJS7lCxmAfEArr\ndw+/YqX0S5giGbK25aC0/P7L3QyrYkzV8umjNcHiAMk7zikqZM7xeXL7\n-----END PRIVATE KEY-----\n"
+    },
+    {
+      "id": "COL1",
+      "name": "EcoCollect Pvt Ltd",
+      "role": "COLLECTOR",
+      "publicKey": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEP2J4fbgUfmbBjqXgNRRWlFdvsuLw\nppbUnj1uXi73g4pW67yWrLqHgzpV4AnCUFojNVhWSSeOtOGVb0wKflia1g==\n-----END PUBLIC KEY-----\n",
+      "privateKey": "-----BEGIN PRIVATE KEY-----\nMIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQgMHx+Pyg2aENH2ifc\nleyBXSNH5kbKxQRnDEdLfNLau8ahRANCAAQ/Ynh9uBR+ZsGOpeA1FFaUV2+y4vCm\nltSePW5eLveDilbrvJasuoeDOlXgCcJQWiM1WFZJJ4604ZVvTAp+WJrW\n-----END PRIVATE KEY-----\n"
+    },
+    {
+      "id": "TRN1",
+      "name": "SafeMove Logistics",
+      "role": "TRANSPORTER",
+      "publicKey": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEeyT1pdb+BG2odIV6+gpTgU3TvHVR\neLrGjxZ0dPkAQXQte8w5h4gHKoYVDSvLYmnnq2NcikSv14hP7xenW4CCmQ==\n-----END PUBLIC KEY-----\n",
+      "privateKey": "-----BEGIN PRIVATE KEY-----\nMIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQgmzqXVGgM/oStLJea\ns4d79Q956GxcRoEeZFyGmAm/juShRANCAAR7JPWl1v4Ebah0hXr6ClOBTdO8dVF4\nusaPFnR0+QBBdC17zDmHiAcqhhUNK8tiaeerY1yKRK/XiE/vF6dbgIKZ\n-----END PRIVATE KEY-----\n"
+    },
+    {
+      "id": "REC1",
+      "name": "CleanCycle Recyclers",
+      "role": "RECYCLER",
+      "publicKey": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEx86vYhvu5yOrlaG+DRcQjmlZZStR\n3IqYaM9YgLTs9x32nwIiW2Ydv6y9Oy9QFjCzEbjUok8F3QnjoJ4NeFBxJw==\n-----END PUBLIC KEY-----\n",
+      "privateKey": "-----BEGIN PRIVATE KEY-----\nMIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQgctJrfnmaElDgagLj\n9N6YRsTjDD9Sj9YTAMaQ31AFTRChRANCAATHzq9iG+7nI6uVob4NFxCOaVllK1Hc\niphoz1iAtOz3HfafAiJbZh2/rL07L1AWMLMRuNSiTwXdCeOgng14UHEn\n-----END PRIVATE KEY-----\n"
+    },
+    {
+      "id": "AUD1",
+      "name": "Pollution Control Board",
+      "role": "AUDITOR",
+      "publicKey": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEi/QD85dPSMLkx+q4BkA0apG3KVsy\nx86FuMRuLB1vK/bWvjs//Ux04fvwi6OdrjCd7afhyl/6xKIcVwhZjUhXGg==\n-----END PUBLIC KEY-----\n",
+      "privateKey": "-----BEGIN PRIVATE KEY-----\nMIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQgxWZxaiUpMA3bQm20\nd+u/k8EKmYhg7TnCnkz9Wic/xtOhRANCAASL9APzl09IwuTH6rgGQDRqkbcpWzLH\nzoW4xG4sHW8r9ta+Oz/9THTh+/CLo52uMJ3tp+HKX/rEohxXCFmNSFca\n-----END PRIVATE KEY-----\n"
+    }
+  ],
+  "validators": [
+    {
+      "id": "NODE-A",
+      "name": "Validator A",
+      "role": "VALIDATOR",
+      "publicKey": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEKi9CWOJby3PxAJUgJGzK/hqP19oY\nV8J+d+YUmdklVca0pC+EplD0TffRhFzIqK2zSW0+2M8XDsQPsc2+m2FUhQ==\n-----END PUBLIC KEY-----\n",
+      "privateKey": "-----BEGIN PRIVATE KEY-----\nMIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQguSCHOmJr1ejtXkE5\ndT5rjJXJ+NtPx/NOZMjBN7LrZYOhRANCAAQqL0JY4lvLc/EAlSAkbMr+Go/X2hhX\nwn535hSZ2SVVxrSkL4SmUPRN99GEXMiorbNJbT7YzxcOxA+xzb6bYVSF\n-----END PRIVATE KEY-----\n"
+    },
+    {
+      "id": "NODE-B",
+      "name": "Validator B",
+      "role": "VALIDATOR",
+      "publicKey": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEQrsDMc2UiBmuNvWFGgiMPOFTYyRN\ndRYjUtsI1kpjHyS/UW1fbilI5U+0Yt1MfLhLA1oc+SvRgC21ZjH7VGaKUQ==\n-----END PUBLIC KEY-----\n",
+      "privateKey": "-----BEGIN PRIVATE KEY-----\nMIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQgt4kACK98sApQcCyk\njtY+2kScp1fglnQmd+5zHBxK+NmhRANCAARCuwMxzZSIGa429YUaCIw84VNjJE11\nFiNS2wjWSmMfJL9RbV9uKUjlT7Ri3Ux8uEsDWhz5K9GALbVmMftUZopR\n-----END PRIVATE KEY-----\n"
+    },
+    {
+      "id": "NODE-C",
+      "name": "Validator C",
+      "role": "VALIDATOR",
+      "publicKey": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEOEcS4pWo/yCDKRDFxJrgVGs02avk\nGAzWBZXQVlQK4i+v7XSWznyCvrEo3ApH51Z4MXhrUWVTwzJv1rlVXyy+DQ==\n-----END PUBLIC KEY-----\n",
+      "privateKey": "-----BEGIN PRIVATE KEY-----\nMIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQggqjS8THLLM3gwG8k\nmV6HF21b3qBUvoOa3i+c5Sj46i+hRANCAAQ4RxLilaj/IIMpEMXEmuBUazTZq+QY\nDNYFldBWVAriL6/tdJbOfIK+sSjcCkfnVngxeGtRZVPDMm/WuVVfLL4N\n-----END PRIVATE KEY-----\n"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "ewaste-chain-of-custody",
+  "version": "2.0.0",
+  "description": "Blockchain-Based E-Waste Chain of Custody and Verification System",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js && node test-chaincode.js",
+    "build": "esbuild client/app.jsx --bundle --minify --outfile=public/app.js",
+    "sync-chaincode": "node -e \"const f=require('fs');['contract','utils'].forEach(n=>f.copyFileSync('src/'+n+'.js','chaincode/lib/'+n+'.js'))\"",
+    "start:fabric": "LEDGER=fabric node server.js",
+    "fabric:enroll": "node fabric/enroll.js"
+  },
+  "dependencies": { "express": "^4.19.2", "qrcode": "^1.5.3" },
+  "optionalDependencies": { "fabric-network": "^2.2.20", "fabric-ca-client": "^2.2.20", "mongodb": "^6.8.0" },
+  "devDependencies": { "esbuild": "^0.24.0", "react": "^18.3.1", "react-dom": "^18.3.1" }
+}

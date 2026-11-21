@@ -1,0 +1,41 @@
+{
+  "chain": [
+    {
+      "index": 0,
+      "timestamp": 0,
+      "prevHash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "merkleRoot": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "validator": "GENESIS",
+      "signature": "",
+      "txs": [],
+      "hash": "147e846202dcbd992c156424a5089f453eb3bee15cc8a9fe4e918a9592c29513"
+    },
+    {
+      "index": 1,
+      "timestamp": 1795288905045,
+      "prevHash": "147e846202dcbd992c156424a5089f453eb3bee15cc8a9fe4e918a9592c29513",
+      "merkleRoot": "7a6ceee180736762a99578770444fc5587cfdb50451278f0b289e0b8a3f9dca3",
+      "validator": "NODE-B",
+      "txs": [
+        {
+          "type": "REGISTER",
+          "itemId": "EW-C8C73E4F",
+          "actor": "GEN1",
+          "actorRole": "GENERATOR",
+          "payload": {
+            "dataHash": "9857d12a43540b2e242ed944d70ffc20cc836feeadb07bc7ac356540bcc5321c",
+            "weightKg": 2,
+            "hasData": true,
+            "category": "Desktop PC"
+          },
+          "timestamp": 1795288904933,
+          "txId": "7a6ceee180736762a99578770444fc5587cfdb50451278f0b289e0b8a3f9dca3",
+          "signature": "MEUCIQDKufsFtquKp+Qxk5Sg/ZeU+l+U6usBeIwS1S722NDBUQIgLRy6xaXr3CyV9mC1c6zNDNYszRp0EANpFl7hopVNVk4="
+        }
+      ],
+      "hash": "e5534670d3d4098ef34b3bf37a61a2f33869facf87990d867404b470bff32a5f",
+      "signature": "MEUCIDQNoUnDHFqrmFvBs0suv9d/bXWt8wX6UmZqUTi9cekwAiEA1apv10rDx9W107jyVoqiGXupth2Irx7+AY8rohJXZCQ="
+    }
+  ],
+  "pending": []
+}

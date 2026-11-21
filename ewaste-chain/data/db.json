@@ -1,0 +1,246 @@
+{
+  "items": {
+    "EW-C8C73E4F": {
+      "details": {
+        "category": "Desktop PC",
+        "description": "dell",
+        "brand": "",
+        "weightKg": 2,
+        "hasData": true,
+        "generator": "Green Valley Apartments",
+        "createdAt": "2026-11-21T19:21:44.900Z"
+      },
+      "docs": {}
+    }
+  },
+  "alerts": [
+    {
+      "id": "62dc92d6",
+      "time": 1795289021020,
+      "kind": "UNAUTHORIZED_ACTION",
+      "severity": "high",
+      "message": "Smart contract rejected: Role GENERATOR is not allowed to COLLECT",
+      "actor": "GEN1",
+      "itemId": "EW-C8C73E4F",
+      "action": "COLLECT"
+    },
+    {
+      "id": "d1cb4af2",
+      "time": 1795289024283,
+      "kind": "UNAUTHORIZED_ACTION",
+      "severity": "high",
+      "message": "Smart contract rejected: Role GENERATOR is not allowed to DISMANTLE",
+      "actor": "GEN1",
+      "itemId": "EW-C8C73E4F",
+      "action": "DISMANTLE"
+    },
+    {
+      "id": "f13745a6",
+      "time": 1795289038290,
+      "kind": "UNAUTHORIZED_ACTION",
+      "severity": "high",
+      "message": "Smart contract rejected: Role GENERATOR is not allowed to RECYCLE",
+      "actor": "GEN1",
+      "itemId": "EW-C8C73E4F",
+      "action": "RECYCLE"
+    },
+    {
+      "id": "84cac69c",
+      "time": 1795289039441,
+      "kind": "UNAUTHORIZED_ACTION",
+      "severity": "high",
+      "message": "Smart contract rejected: Role GENERATOR is not allowed to DISMANTLE",
+      "actor": "GEN1",
+      "itemId": "EW-C8C73E4F",
+      "action": "DISMANTLE"
+    },
+    {
+      "id": "e91f8c86",
+      "time": 1795289040513,
+      "kind": "UNAUTHORIZED_ACTION",
+      "severity": "high",
+      "message": "Smart contract rejected: Role GENERATOR is not allowed to COLLECT",
+      "actor": "GEN1",
+      "itemId": "EW-C8C73E4F",
+      "action": "COLLECT"
+    },
+    {
+      "id": "f3e4f194",
+      "time": 1795289161828,
+      "kind": "TAMPER_DETECTED",
+      "severity": "critical",
+      "message": "Item EW-C8C73E4F: Ledger integrity (hash chain, Merkle roots, validator & user signatures)",
+      "itemId": "EW-C8C73E4F"
+    },
+    {
+      "id": "4e5a960a",
+      "time": 1795289172842,
+      "kind": "INVALID_ACTION",
+      "severity": "medium",
+      "message": "Ledger integrity check failed - writes blocked",
+      "actor": "COL1",
+      "itemId": "EW-C8C73E4F",
+      "action": "COLLECT"
+    },
+    {
+      "id": "0b37b1fd",
+      "time": 1795289177540,
+      "kind": "INVALID_ACTION",
+      "severity": "medium",
+      "message": "Ledger integrity check failed - writes blocked",
+      "actor": "COL1",
+      "itemId": "EW-C8C73E4F",
+      "action": "DISMANTLE"
+    },
+    {
+      "id": "54d5535b",
+      "time": 1795289179627,
+      "kind": "INVALID_ACTION",
+      "severity": "medium",
+      "message": "Ledger integrity check failed - writes blocked",
+      "actor": "COL1",
+      "itemId": "EW-C8C73E4F",
+      "action": "RECYCLE"
+    },
+    {
+      "id": "38ed53af",
+      "time": 1795289182640,
+      "kind": "INVALID_ACTION",
+      "severity": "medium",
+      "message": "Ledger integrity check failed - writes blocked",
+      "actor": "COL1",
+      "itemId": "EW-C8C73E4F",
+      "action": "COLLECT"
+    },
+    {
+      "id": "6519c031",
+      "time": 1795289228798,
+      "kind": "INVALID_ACTION",
+      "severity": "medium",
+      "message": "Ledger integrity check failed - writes blocked",
+      "actor": "AUD1",
+      "itemId": "EW-02FF897C",
+      "action": "REGISTER"
+    },
+    {
+      "id": "51936301",
+      "time": 1795289247464,
+      "kind": "INVALID_ACTION",
+      "severity": "medium",
+      "message": "Ledger integrity check failed - writes blocked",
+      "actor": "GEN1",
+      "itemId": "EW-5B73A1B0",
+      "action": "REGISTER"
+    },
+    {
+      "id": "91c17622",
+      "time": 1795289249202,
+      "kind": "INVALID_ACTION",
+      "severity": "medium",
+      "message": "Ledger integrity check failed - writes blocked",
+      "actor": "GEN1",
+      "itemId": "EW-713A7F29",
+      "action": "REGISTER"
+    },
+    {
+      "id": "d26ad8a4",
+      "time": 1795289255129,
+      "kind": "INVALID_ACTION",
+      "severity": "medium",
+      "message": "Ledger integrity check failed - writes blocked",
+      "actor": "GEN1",
+      "itemId": "EW-9D88F1AB",
+      "action": "REGISTER"
+    },
+    {
+      "id": "eca545bd",
+      "time": 1795289255343,
+      "kind": "INVALID_ACTION",
+      "severity": "medium",
+      "message": "Ledger integrity check failed - writes blocked",
+      "actor": "GEN1",
+      "itemId": "EW-8FB57009",
+      "action": "REGISTER"
+    },
+    {
+      "id": "f73f1124",
+      "time": 1795289255539,
+      "kind": "INVALID_ACTION",
+      "severity": "medium",
+      "message": "Ledger integrity check failed - writes blocked",
+      "actor": "GEN1",
+      "itemId": "EW-169223AD",
+      "action": "REGISTER"
+    },
+    {
+      "id": "932917df",
+      "time": 1795289255776,
+      "kind": "INVALID_ACTION",
+      "severity": "medium",
+      "message": "Ledger integrity check failed - writes blocked",
+      "actor": "GEN1",
+      "itemId": "EW-26CF86DC",
+      "action": "REGISTER"
+    },
+    {
+      "id": "c9a97638",
+      "time": 1795289256265,
+      "kind": "INVALID_ACTION",
+      "severity": "medium",
+      "message": "Ledger integrity check failed - writes blocked",
+      "actor": "GEN1",
+      "itemId": "EW-E9A2659C",
+      "action": "REGISTER"
+    },
+    {
+      "id": "c53df0a6",
+      "time": 1795289256729,
+      "kind": "INVALID_ACTION",
+      "severity": "medium",
+      "message": "Ledger integrity check failed - writes blocked",
+      "actor": "GEN1",
+      "itemId": "EW-BA9E70B7",
+      "action": "REGISTER"
+    },
+    {
+      "id": "9ba08f00",
+      "time": 1795289264198,
+      "kind": "INVALID_ACTION",
+      "severity": "medium",
+      "message": "Ledger integrity check failed - writes blocked",
+      "actor": "GEN1",
+      "itemId": "EW-1246A9F4",
+      "action": "REGISTER"
+    },
+    {
+      "id": "f2bf289f",
+      "time": 1795289270025,
+      "kind": "INVALID_ACTION",
+      "severity": "medium",
+      "message": "Ledger integrity check failed - writes blocked",
+      "actor": "GEN1",
+      "itemId": "EW-FE77FE66",
+      "action": "REGISTER"
+    },
+    {
+      "id": "bddd51e6",
+      "time": 1795289270209,
+      "kind": "INVALID_ACTION",
+      "severity": "medium",
+      "message": "Ledger integrity check failed - writes blocked",
+      "actor": "GEN1",
+      "itemId": "EW-0A73E9D3",
+      "action": "REGISTER"
+    },
+    {
+      "id": "56f3c5db",
+      "time": 1795289270390,
+      "kind": "INVALID_ACTION",
+      "severity": "medium",
+      "message": "Ledger integrity check failed - writes blocked",
+      "actor": "GEN1",
+      "itemId": "EW-C1649E0C",
+      "action": "REGISTER"
+    }
+  ]
+}
